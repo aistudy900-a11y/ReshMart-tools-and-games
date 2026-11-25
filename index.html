@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RBM Digital Hub | Tools, Games & Resources</title>
+
+<meta name="description" content="Explore useful AI tools, educational games, productivity resources and digital products at RBM Digital Hub.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fc;
+    color: #202b45;
+}
+
+header {
+    background: #111d38;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #14213d, #315caa);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+.search {
+    margin-top: 30px;
+    padding: 14px;
+    width: 90%;
+    max-width: 430px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+section {
+    padding: 55px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #68738b;
+    margin-bottom: 35px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 27px 22px;
+    border-radius: 13px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin: 14px 0 10px;
+    font-size: 19px;
+}
+
+.card p {
+    color: #68738b;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 20px;
+    background: #315caa;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.coming {
+    color: #8a94a8;
+    font-size: 13px;
+    margin-top: 17px;
+    display: inline-block;
+}
+
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #68738b;
+    line-height: 1.8;
+}
+
+footer {
+    background: #111d38;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    line-height: 1.8;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RBM Digital Hub</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tools">AI Tools</a>
+        <a href="#games">Games</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+
+    <h1>Welcome to RBM Digital Hub</h1>
+
+    <p>
+        Discover smart tools, educational games,
+        productivity resources and digital solutions
+        designed to make your everyday life easier.
+    </p>
+
+    <input
+        type="text"
+        class="search"
+        id="searchBox"
+        placeholder="Search tools and resources..."
+        onkeyup="searchCards()"
+    >
+
+</div>
+
+<section id="tools">
+
+    <h2 class="section-title">AI Tools</h2>
+
+    <p class="subtitle">
+        Explore useful digital tools.
+    </p>
+
+    <div class="grid">
+
+        <div class="card searchable">
+            <div class="icon">📚</div>
+            <h3>Activity Book Maker</h3>
+            <p>
+                Create engaging activity books
+                and creative learning materials.
+            </p>
+            <a href="activity%20book%20maker.html"
+               class="button">Open Tool</a>
+        </div>
+
+        <div class="card searchable">
+            <div class="icon">⚙️</div>
+            <h3>More AI Tools</h3>
+            <p>Discover more useful tools coming soon.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="games">
+
+    <h2 class="section-title">Games Zone</h2>
+
+    <p class="subtitle">
+        Fun and educational experiences for everyone.
+    </p>
+
+    <div class="grid">
+
+        <div class="card searchable">
+            <div class="icon">🎮</div>
+            <h3>Educational Games</h3>
+            <p>Interactive learning and fun games.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+        <div class="card searchable">
+            <div class="icon">🧩</div>
+            <h3>Kids Games</h3>
+            <p>Creative activities for young learners.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="resources">
+
+    <h2 class="section-title">Productivity & Digital Resources</h2>
+
+    <p class="subtitle">
+        Resources to organize your goals and daily life.
+    </p>
+
+    <div class="grid">
+
+        <div class="card searchable">
+            <div class="icon">✍️</div>
+            <h3>Journals & Planners</h3>
+            <p>Affirmation journals and planning resources.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+        <div class="card searchable">
+            <div class="icon">📊</div>
+            <h3>Trackers</h3>
+            <p>Goal trackers and income management sheets.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+        <div class="card searchable">
+            <div class="icon">📖</div>
+            <h3>E-books & Guides</h3>
+            <p>Explore helpful digital reading resources.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+        <div class="card searchable">
+            <div class="icon">✅</div>
+            <h3>Checklists & Worksheets</h3>
+            <p>Useful checklists and printable worksheets.</p>
+            <span class="coming">Coming Soon</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="section-title">About RBM Digital Hub</h2>
+
+    <p>
+        RBM Digital Hub is a digital platform bringing
+        together smart tools, educational games,
+        creative resources and productivity solutions
+        in one convenient place.
+    </p>
+
+</section>
+
+<footer>
+
+    <h3>RBM Digital Hub</h3>
+
+    <p>Tools, Games & Digital Resources – All in One Place.</p>
+
+    <p>© 2026 RBM Digital Hub. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+function searchCards() {
+
+    let input = document.getElementById("searchBox")
+        .value.toLowerCase();
+
+    let cards = document.querySelectorAll(".searchable");
+
+    cards.forEach(function(card) {
+
+        let text = card.innerText.toLowerCase();
+
+        card.style.display =
+            text.includes(input) ? "block" : "none";
+
+    });
+}
+</script>
+
+</body>
+</html>
